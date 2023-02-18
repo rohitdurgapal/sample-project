@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-title hr {
+  border-bottom: 3px solid #8b283e;
+  margin-top: 0.5em;
+  width: 65px;
+  opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.filters div {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+.course-box {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  font-weight: 700;
+}
+
+.course-box .sorting-block {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.course-box .sorting-block div {
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.course-box .card-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.course-box .form-control {
+  border-color: #000000;
+  border-width: 1px;
+}
+
+.course-overview span {
+  font-weight: 700;
+}
+
+.course-overview {
+  font-weight: normal;
+}
+
+.enquiry-block div {
+  display: flex;
+  align-items: center;
+}
+
+.enquiry-block {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-bottom: 0.5em;
+}
+
+.enquiry-block i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.enquiry-block h6 {
+  margin: 0;
+}
+
+.enquiry-class button {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 0.4em;
+  width: 150px;
+  font-weight: 600;
+}
+
+.accordion-button-custom {
+  padding: 5px 25px !important;
+  width: auto !important;
+  text-align: center !important;
+  margin: auto !important;
+  border: 1px solid #000000 !important;
+  border-radius: 30px !important;
+  position: absolute !important;
+  bottom: -14px !important;
+  left: 39% !important;
+}
+
+@media only screen and (max-width:767px) {
+  .enquiry-block {
+    display: grid;
+    grid-template-columns: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .enquiry-block div {
+    margin-bottom: 0.5em;
+  }
+
+  .course-box {
+    grid-template-columns: 50% 50%;
   }
 }
